@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <form action="load.php">
+        <!--Dropdown-->
+        <select name="cars">
+            <option value="0"> Volvo</option>
+            <option value="1"> Volkswagen </option>
+            <option value="2"> Chevrolet</option>
+            <option value="3" selected> Audi</option>
+            <option value="4"> BMW</option>
+        </select>
+       <!--Text area-->
+        <textarea name="about_me" placeholder="Escribe" rows="5" cols="100"></textarea>
+       <!--Radio button, eliges uno-->
+        <input type="radio" name="gender" value="0"> Male </input>
+        <input type="radio" name="gender" value="1"> Female </input>
+        <input type="radio" name="gender" value="2" checked> Other </input>
+        <!--Checkbox, puedes elegir mas de uno-->
+        <input type="checkbox" name="preference" value="0"> Male </input>
+        <input type="checkbox" name="preference" value="1"> Female </input>
+        <input type="checkbox" name="preference" value="2" checked> Other </input>
+        <!--Input con texto; menos de 125 caracteres"twit" o 255 "normal, si no textarea" -->
+        <input type="text" name="Nombre" placeholder="Nombre"></input>
+        <input type="text" name="Apellido" placeholder="Apellido"></input>
+        <!--Boton-->
+        <button type="button" id="enviar" onclick="alert('Hola');">Enviar</button>
+        </form>
+    </body>
+</html>

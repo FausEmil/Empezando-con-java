@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <!--biblioteca java script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+    </head>
+    <body>
+        <h1>
+            Cuestionario
+        </h1>
+        <hr>
+        <h4>
+            Tipo de carro
+        </h4>
+        <select name="cars">
+            <option value="0"> Volvo</option>
+            <option value="1"> Volkswagen </option>
+            <option value="2"> Chevrolet</option>
+            <option value="3" selected> Audi</option>
+            <option value="4"> BMW</option>
+        </select>
+        <h4>
+            Modelo
+        </h4>
+        <input type="radio" name="Modelo" value="0"> 2015 </input>
+        <input type="radio" name="Modelo" value="1"> 2016 </input>
+        <input type="radio" name="Modelo" value="2" checked> 2017 </input>
+        <h4>
+            Extras
+        </h4>
+        <input type="checkbox" name="Extras" value="0"> Quemacocos </input>
+        <input type="checkbox" name="Extras" value="1"> Asientos de piel </input>
+        <input type="text" name="Extras" placeholder="Otros" id="id_otros"></input>
+        <input type="checkbox" name="Extras" value="2"> Ninguno </input>
+        <h4>
+            Comentarios
+        </h4>
+        <textarea name="Observaciones" placeholder="Observaciones o comentarios" rows="6" cols="100"></textarea>
+        <br>
+        <button type="button" id="enviar" onclick="get_Extra_text();">Enviar</button>    
+        <br>
+        <input type="text" name="Edad" placeholder="Edad" id="id_edad"></input>
+        <br>
+        <!--java scrip con jquery aqui hacemos que nos aparesca hola cuando el documento esta totatlmente cargado-->
+        <script>
+       /* $(document).ready(function(){
+            var x="hola";
+            var a=5;
+            var b=3;
+            var c=true;
+            var d=false;
+            alert(c||d);
+            });*/
+            function get_Extra_text(){
+                var edad=$('#id_edad').val();
+                alert(edad);
+          if(edad>18){
+              alert("pasa");
+          }else{
+              alert("no pasa")
+          }
+           } 
+        </script>
+        </body>
+</html
